@@ -1,0 +1,47 @@
+        body {
+            font-family: 'Times New Roman';
+            text-align: center;
+            background: #011627;
+            color: red;
+            font-size: 30px;
+            border: 20px solid red;
+            margin: 0;
+            position: relative; /* Set the positioning context for absolute positioning */
+        }
+        
+        h2 {
+            color: white;
+            font-size: 60px;
+        }
+        
+        /* Wrapper for rounded corners on GIF */
+        .gif-container {
+            width: 700px; 
+            height: 400px;  
+            margin-top: 20px; /* Adds space above the GIF */
+            border-radius: 15px;
+            overflow: hidden; /* Ensures the image fits within the rounded corners */
+            display: inline-block;
+        }
+
+        .gif-container img {
+            width: 100%; /* Make the image fit the container */
+            height: 100%; /* Make the image fit the container */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        .sticker-background {
+            position: absolute; /* Position relative to the body */
+            top: 10px; 
+            left: 10px; 
+            width: 100px; 
+            height: 100px; 
+        }
+
+        .sticker-background img {
+            width: 100%; /* Make the image fit the container */
+            height: 100%; /* Make the image fit the container */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+        }
+    
